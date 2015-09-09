@@ -30,7 +30,7 @@
 </filter-mapping> 
     
     
-	<display-name>Service Provider</display-name>
+	<display-name>Service Provider Web</display-name>
 	
 	<error-page>  
        <error-code>404</error-code>  
@@ -45,7 +45,7 @@
 
 	<servlet-mapping>
 		<servlet-name>mvc-dispatcher</servlet-name>
-		<url-pattern>*.do</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 	<context-param>
@@ -56,5 +56,6 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+	
+	
 </web-app>
