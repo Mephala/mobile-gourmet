@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gokhanozg</groupId>
+  <artifactId>mobile-gourmet</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <repositories>
+   <repository>
+        <id>maven2-repository.dev.java.net</id>
+        <name>Java.net Repository for Maven</name>
+        <url>http://download.java.net/maven/2/
+        </url>
+        <layout>default</layout>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+    </repository>
+     <repository>
+      <id>JBoss repository</id>
+      <url>http://repository.jboss.com/maven2/</url>
+    </repository>
+</repositories> 
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>3.2.0.RELEASE</spring.version>
+  </properties>
+  
+  <build>
+  	 <plugins>
+	            <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-compiler-plugin</artifactId>
+	                <version>3.0</version>
+	                <configuration>
+	                	 <source>1.7</source>
+	                <target>1.7</target>
+          				<skipTests>true</skipTests>
+        			 </configuration>
+	            </plugin>
+	            <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-surefire-plugin</artifactId>
+	                <version>2.12.4</version>
+	            </plugin>
+	    </plugins>
+	    
+	 </build>
+  
+  
+  <dependencies>
+  
+  	<dependency>
+			<groupId>service-provider</groupId>
+			<artifactId>service-provider-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+      	
+  		<!-- Spring 3 dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+			<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+  		</dependency>
+  
+  </dependencies>
+  
+  
+  
+</project>

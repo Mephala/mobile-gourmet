@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib> 
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>substr</shortname>
+<info>All KelepicPc Tags.</info>
+<uri>http://viralpatel.net/blogs/jsp/taglib/substr</uri>
+<tag>
+    <name>priceTag</name>
+    <tagclass>com.kelepirpc.com.tag.PriceTag</tagclass>
+    <info>Price formatting.</info>
+    <attribute>
+      <name>valuable</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  	<attribute>
+      <name>withoutSpan</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+  	</attribute>
+  <attribute>
+      <name>preferredCurrency</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+  </attribute>        
+</tag>
+<!-- <tag> -->
+<!--     <name>substring</name> -->
+<!--     <tagclass>com.kelepirpc.com.tag.SubstrTagHandler</tagclass> -->
+<!--     <info>Substring function.</info> -->
+<!--     <attribute> -->
+<!--       <name>input</name> -->
+<!--       <required>true</required> -->
+<!--   </attribute> -->
+<!--     <attribute> -->
+<!--       <name>start</name> -->
+<!--       <required>true</required> -->
+<!--   </attribute> -->
+<!--     <attribute> -->
+<!--       <name>end</name> -->
+<!--       <required>true</required> -->
+<!--   </attribute> -->
+<!-- </tag> -->
+</taglib> 
